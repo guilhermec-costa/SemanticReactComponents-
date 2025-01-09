@@ -1,15 +1,15 @@
 {
   "name": "semantic-react-ui-components",
-  "version": "1.1.1",
+  "version": "1.1.3",
   "description": "Semantic Components",
   "main": "./dist/index.js",
-  "module": "dist/semantic-components.esm.js",
-  "types": "dist/index.d.ts",
+  "module": "./dist/semantic-components.es.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/semantic-components.es.js",
-      "require": "./dist/semantic-components.umd.js",
-      "types": "./dist/index.d.ts"
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js"
     }
   },
   "scripts": {

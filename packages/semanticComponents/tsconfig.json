@@ -1,14 +1,16 @@
 {
   "compilerOptions": {
-    "target": "es5",                    
-    "module": "ESNext",
-    "jsx": "react",                     
-    "outDir": "./dist",                 
-    "strict": true,                     
-    "esModuleInterop": true,            
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "outDir": "./dist", // Pasta de saída
+    "declaration": true, // Gera arquivos .d.ts
+    "declarationMap": true, // Gera mapas para declarações
+    "sourceMap": true, // Gera arquivos .map para depuração
+    "module": "ESNext", // Usa ES Modules
+    "target": "ESNext", // Define a versão de JavaScript alvo
+    "jsx": "react", // Suporte para JSX
+    "strict": true, // Modo estrito
+    "esModuleInterop": true, // Permite interoperabilidade com CommonJS
+    "skipLibCheck": true // Ignora checagem de bibliotecas
   },
-  "include": ["src/**/*"],              
+  "include": ["src/**/*"],
   "exclude": ["node_modules", "**/*.spec.ts"]
 }
