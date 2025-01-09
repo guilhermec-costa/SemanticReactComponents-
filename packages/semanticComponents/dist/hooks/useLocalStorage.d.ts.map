@@ -1,0 +1,1 @@
+{"version":3,"file":"useLocalStorage.d.ts","sourceRoot":"","sources":["../../src/hooks/useLocalStorage.ts"],"names":[],"mappings":"AAEA,QAAA,MAAM,eAAe,GAAI,CAAC,OAAQ,MAAM,gBAAgB,CAAC,KAAG,CAAC,CAAC,EAAE,CAAC,KAAK,EAAE,CAAC,KAAK,IAAI,EAAE,MAAM,IAAI,CAgC7F,CAAC;AAEF,eAAe,eAAe,CAAC"}

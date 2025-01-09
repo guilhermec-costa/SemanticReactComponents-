@@ -1,0 +1,1 @@
+{"version":3,"file":"useElementSize.d.ts","sourceRoot":"","sources":["../../src/hooks/useElementSize.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAA;AAEzB,UAAU,UAAU;IAClB,KAAK,EAAE,MAAM,CAAC;IACd,MAAM,EAAE,MAAM,CAAC;CAChB;AACD,QAAA,MAAM,cAAc,GAAI,CAAC,SAAS,WAAW,OAAI,CAAC,KAAK,CAAC,SAAS,CAAC,CAAC,CAAC,EAAE,UAAU,CAqB/E,CAAA;AAED,eAAe,cAAc,CAAC"}

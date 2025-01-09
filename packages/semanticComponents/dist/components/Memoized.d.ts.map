@@ -1,0 +1,1 @@
+{"version":3,"file":"Memoized.d.ts","sourceRoot":"","sources":["../../src/components/Memoized.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAC;AAE1B;;;;;;;;;;;;;GAaG;AAGH,UAAU,aAAa;IACrB,IAAI,CAAC,EAAE,KAAK,CAAC,cAAc,CAAC;CAC7B;AAED,QAAA,MAAM,QAAQ,EAAE,KAAK,CAAC,EAAE,CAAC,KAAK,CAAC,iBAAiB,CAAC,aAAa,CAAC,CAU9D,CAAC;AAEF,eAAe,QAAQ,CAAC"}

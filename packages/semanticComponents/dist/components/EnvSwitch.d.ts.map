@@ -1,0 +1,1 @@
+{"version":3,"file":"EnvSwitch.d.ts","sourceRoot":"","sources":["../../src/components/EnvSwitch.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAA;AAEzB;;;;;;;;;;GAUG;AAEH,QAAA,MAAM,SAAS,EAAE,KAAK,CAAC,EAAE,CAAC;IAAC,GAAG,EAAE,KAAK,CAAC,SAAS,CAAC;IAAC,GAAG,EAAE,KAAK,CAAC,SAAS,CAAC;IAAC,IAAI,EAAE,KAAK,CAAC,SAAS,CAAA;CAAC,CAQ5F,CAAA;AAED,eAAe,SAAS,CAAC"}

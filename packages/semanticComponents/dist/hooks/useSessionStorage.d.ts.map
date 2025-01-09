@@ -1,0 +1,1 @@
+{"version":3,"file":"useSessionStorage.d.ts","sourceRoot":"","sources":["../../src/hooks/useSessionStorage.ts"],"names":[],"mappings":"AAEA,QAAA,MAAM,iBAAiB,GAAI,CAAC,OAAQ,MAAM,gBAAgB,CAAC,KAAG,CAAC,CAAC,EAAE,CAAC,KAAK,EAAE,CAAC,KAAK,IAAI,EAAE,MAAM,IAAI,CAiC/F,CAAC;AAEF,eAAe,iBAAiB,CAAC"}

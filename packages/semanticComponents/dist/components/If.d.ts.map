@@ -1,0 +1,1 @@
+{"version":3,"file":"If.d.ts","sourceRoot":"","sources":["../../src/components/If.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAC;AAE1B;;;;;;;;;GASG;AAEH,UAAU,OAAO;IACf,SAAS,EAAE,OAAO,CAAC;IACnB,MAAM,EAAE,KAAK,CAAC,SAAS,CAAC;CACzB;AAED,QAAA,MAAM,EAAE,EAAE,KAAK,CAAC,EAAE,CAAC,OAAO,CAEzB,CAAC;AAEF,eAAe,EAAE,CAAC"}
