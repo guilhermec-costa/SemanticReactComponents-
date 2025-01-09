@@ -1,6 +1,8 @@
 # Semantic Components
 
-Semantic Components is a library of reusable, semantic React components and useful hooks designed to enhance your web applications. This library focuses on providing a set of well-structured components that are easy to integrate and customize, promoting best practices in React development. 
+> **Important:** Please use version `1.1.5` or greater for optimal stability and compatibility. Later versions are not working properly
+
+Semantic Components is a library of reusable, semantic React components and useful hooks designed to enhance your web applications. This library focuses on providing a set of well-structured components that are easy to integrate and customize, promoting best practices in React development.
 
 ## Features
 
@@ -8,10 +10,10 @@ Semantic Components is a library of reusable, semantic React components and usef
 - **Reusable Hooks**: A collection of custom hooks that simplify common tasks and improve code reusability, making it easier to manage state and side effects in your applications.
 - **Lightweight and Efficient**: Components are designed to be lightweight, ensuring optimal performance and fast load times.
 
-
 ## Installation
 
 To install the package, run:
+
 ```bash
 npm install semantic-react-ui-components
 ```
@@ -31,7 +33,7 @@ The `Delayed` component is used to delay the rendering of its children for a spe
 #### Usage
 
 ```tsx
-import Delayed from 'semantic-components/Delayed';
+import Delayed from "semantic-components/Delayed";
 
 const Example = () => (
   <Delayed delay={1000}>
@@ -42,9 +44,9 @@ const Example = () => (
 
 #### Properties
 
-| Property | Type   | Description                                        |
-|----------|--------|----------------------------------------------------|
-| `delay`  | number | The delay in milliseconds before rendering children.|
+| Property | Type   | Description                                          |
+| -------- | ------ | ---------------------------------------------------- |
+| `delay`  | number | The delay in milliseconds before rendering children. |
 
 #### Example
 
@@ -61,7 +63,7 @@ The `Desktop` component conditionally renders its children when the screen width
 #### Usage
 
 ```tsx
-import Desktop from 'semantic-components/Desktop';
+import Desktop from "semantic-components/Desktop";
 
 const Example = () => (
   <Desktop baseWidth={1024}>
@@ -73,7 +75,7 @@ const Example = () => (
 #### Properties
 
 | Property    | Type   | Description                                             |
-|-------------|--------|---------------------------------------------------------|
+| ----------- | ------ | ------------------------------------------------------- |
 | `baseWidth` | number | Minimum screen width for rendering children (optional). |
 
 #### Example
@@ -83,6 +85,7 @@ const Example = () => (
   <p>This will only appear on large desktop screens</p>
 </Desktop>
 ```
+
 ### `Memoized`
 
 The `Memoized` component memoizes its children, rendering them only when the provided dependencies change. It works similarly to React's `useMemo`, but as a component to optimize rendering.
@@ -90,7 +93,7 @@ The `Memoized` component memoizes its children, rendering them only when the pro
 #### Usage
 
 ```tsx
-import Memoized from 'semantic-components/Memoized';
+import Memoized from "semantic-components/Memoized";
 
 const Example = () => (
   <Memoized deps={[data]}>
@@ -101,9 +104,9 @@ const Example = () => (
 
 #### Properties
 
-| Property | Type                     | Description                                          |
-|----------|--------------------------|------------------------------------------------------|
-| `deps`   | React.DependencyList     | List of dependencies that trigger a re-render when changed (optional). |
+| Property | Type                 | Description                                                            |
+| -------- | -------------------- | ---------------------------------------------------------------------- |
+| `deps`   | React.DependencyList | List of dependencies that trigger a re-render when changed (optional). |
 
 #### Example
 
@@ -125,7 +128,7 @@ The `Switch` component mimics the functionality of a switch-case statement, rend
 #### Usage
 
 ```tsx
-import { Switch, Case } from 'semantic-components/SwitchCase';
+import { Switch, Case } from "semantic-components/SwitchCase";
 
 const Example = () => (
   <Switch expression={status}>
@@ -144,10 +147,10 @@ const Example = () => (
 
 #### Properties
 
-| Property     | Type          | Description                                         |
-|--------------|---------------|-----------------------------------------------------|
-| `expression` | any           | The value to match against each `Case`.            |
-| `children`   | CaseElement[] | An array of `Case` components to evaluate.         |
+| Property     | Type          | Description                                |
+| ------------ | ------------- | ------------------------------------------ |
+| `expression` | any           | The value to match against each `Case`.    |
+| `children`   | CaseElement[] | An array of `Case` components to evaluate. |
 
 ### `Case`
 
@@ -163,14 +166,14 @@ The `Case` component defines a case within the `Switch`.
 
 #### Properties
 
-| Property | Type    | Description                                             |
-|----------|---------|---------------------------------------------------------|
-| `value`  | any     | The value to match against the `expression` in `Switch`. |
-| `default`| boolean | If true, this case will render when no other cases match (optional). |
+| Property  | Type    | Description                                                          |
+| --------- | ------- | -------------------------------------------------------------------- |
+| `value`   | any     | The value to match against the `expression` in `Switch`.             |
+| `default` | boolean | If true, this case will render when no other cases match (optional). |
 
 #### Behavior
 
-- The `Switch` component renders the first `Case` whose `value` matches the `expression`. 
+- The `Switch` component renders the first `Case` whose `value` matches the `expression`.
 - If no matches are found, nothing is rendered unless a `Case` with the `default` prop is provided.
 
 ### `Show`
@@ -180,7 +183,7 @@ The `Show` component conditionally renders its children based on a boolean condi
 #### Usage
 
 ```tsx
-import Show from 'semantic-components/Show';
+import Show from "semantic-components/Show";
 
 const Example = () => (
   <Show when={isVisible}>
@@ -191,9 +194,9 @@ const Example = () => (
 
 #### Properties
 
-| Property | Type    | Description                                   |
-|----------|---------|-----------------------------------------------|
-| `when`   | boolean | The condition to evaluate for rendering children.|
+| Property | Type    | Description                                       |
+| -------- | ------- | ------------------------------------------------- |
+| `when`   | boolean | The condition to evaluate for rendering children. |
 
 #### Example
 
@@ -210,20 +213,24 @@ The `EnvSwitch` component switches between different environment configurations,
 #### Usage
 
 ```tsx
-import EnvSwitch from 'semantic-components/EnvSwitch';
+import EnvSwitch from "semantic-components/EnvSwitch";
 
 const Example = () => (
-  <EnvSwitch dev={<div>This content appears in development</div>} hml={<div>This content appears in staging</div>} prod={<div>This content appears in production</div>} />
+  <EnvSwitch
+    dev={<div>This content appears in development</div>}
+    hml={<div>This content appears in staging</div>}
+    prod={<div>This content appears in production</div>}
+  />
 );
 ```
 
 #### Properties
 
-| Property | Type          | Description                                             |
-|----------|---------------|---------------------------------------------------------|
-| `dev`    | React.ReactNode| Elements to render in the development environment.      |
-| `hml`    | React.ReactNode| Elements to render in the staging environment.         |
-| `prod`   | React.ReactNode| Elements to render in the production environment.      |
+| Property | Type            | Description                                        |
+| -------- | --------------- | -------------------------------------------------- |
+| `dev`    | React.ReactNode | Elements to render in the development environment. |
+| `hml`    | React.ReactNode | Elements to render in the staging environment.     |
+| `prod`   | React.ReactNode | Elements to render in the production environment.  |
 
 #### Behavior
 
@@ -237,29 +244,34 @@ The `useAsyncEffect` hook allows you to run asynchronous effects in a React func
 #### Usage
 
 ```tsx
-import useAsyncEffect from 'semantic-components/useAsyncEffect';
+import useAsyncEffect from "semantic-components/useAsyncEffect";
 
 const Example = () => {
-  useAsyncEffect(async () => {
-    const data = await fetchData();
-    console.log(data);
+  useAsyncEffect(
+    async () => {
+      const data = await fetchData();
+      console.log(data);
 
-    // Optional cleanup function
-    return () => {
-      console.log('Cleanup logic here');
-    };
-  }, [/* dependencies */]);
-  
+      // Optional cleanup function
+      return () => {
+        console.log("Cleanup logic here");
+      };
+    },
+    [
+      /* dependencies */
+    ]
+  );
+
   return <div>Check the console for fetched data.</div>;
 };
 ```
 
 #### Parameters
 
-| Parameter | Type                 | Description                                                  |
-|-----------|----------------------|--------------------------------------------------------------|
-| `cb`      | () => Promise<void>  | The asynchronous callback to run. It can optionally return a cleanup function. |
-| `deps`    | React.DependencyList  | An array of dependencies for the effect; the effect will run whenever these dependencies change. |
+| Parameter | Type                 | Description                                                                                      |
+| --------- | -------------------- | ------------------------------------------------------------------------------------------------ |
+| `cb`      | () => Promise<void>  | The asynchronous callback to run. It can optionally return a cleanup function.                   |
+| `deps`    | React.DependencyList | An array of dependencies for the effect; the effect will run whenever these dependencies change. |
 
 ### `useElementSize`
 
@@ -268,14 +280,16 @@ The `useElementSize` hook provides a way to measure the size of a DOM element an
 #### Usage
 
 ```tsx
-import useElementSize from 'semantic-components/useElementSize';
+import useElementSize from "semantic-components/useElementSize";
 
 const Example = () => {
   const [ref, { width, height }] = useElementSize<HTMLDivElement>();
 
   return (
-    <div ref={ref} style={{ resize: 'both', overflow: 'auto' }}>
-      <p>The size of this element is {width} x {height}</p>
+    <div ref={ref} style={{ resize: "both", overflow: "auto" }}>
+      <p>
+        The size of this element is {width} x {height}
+      </p>
     </div>
   );
 };
@@ -299,23 +313,19 @@ The `useIdleDetection` hook detects user inactivity within a specified timeout p
 #### Usage
 
 ```tsx
-import useIdleDetection from 'semantic-components/useIdleDetection';
+import useIdleDetection from "semantic-components/useIdleDetection";
 
 const Example = () => {
   const isIdle = useIdleDetection(30000); // 30 seconds timeout
 
-  return (
-    <div>
-      {isIdle ? <p>You are idle</p> : <p>You are active</p>}
-    </div>
-  );
+  return <div>{isIdle ? <p>You are idle</p> : <p>You are active</p>}</div>;
 };
 ```
 
 #### Parameters
 
-| Parameter | Type   | Description                             |
-|-----------|--------|-----------------------------------------|
+| Parameter | Type   | Description                                                                                               |
+| --------- | ------ | --------------------------------------------------------------------------------------------------------- |
 | `timeout` | number | The duration (in milliseconds) after which the user is considered idle. Default is 30000 ms (30 seconds). |
 
 #### Returns
@@ -335,17 +345,17 @@ The `useKeyCombo` hook allows you to define and detect key combinations in your 
 #### Usage
 
 ```tsx
-import useKeyCombo from 'semantic-components/useKeyCombo';
+import useKeyCombo from "semantic-components/useKeyCombo";
 
 const Example = () => {
   useKeyCombo([
     {
-      keys: ['Control', 'C'],
-      callback: () => console.log('Control + C pressed!'),
+      keys: ["Control", "C"],
+      callback: () => console.log("Control + C pressed!"),
     },
     {
-      keys: ['Control', 'V'],
-      callback: () => console.log('Control + V pressed!'),
+      keys: ["Control", "V"],
+      callback: () => console.log("Control + V pressed!"),
     },
   ]);
 
@@ -355,11 +365,11 @@ const Example = () => {
 
 #### Parameters
 
-| Parameter | Type           | Description                                         |
-|-----------|----------------|-----------------------------------------------------|
-| `combos`  | `KeyCombo[]`   | An array of key combinations to listen for. Each `KeyCombo` contains: |
-|           |                | - `keys`: An array of key names (strings).        |
-|           |                | - `callback`: A function to be executed when the combination is pressed. |
+| Parameter | Type         | Description                                                              |
+| --------- | ------------ | ------------------------------------------------------------------------ |
+| `combos`  | `KeyCombo[]` | An array of key combinations to listen for. Each `KeyCombo` contains:    |
+|           |              | - `keys`: An array of key names (strings).                               |
+|           |              | - `callback`: A function to be executed when the combination is pressed. |
 
 #### Behavior
 
@@ -379,7 +389,7 @@ The `ScrollTo` component provides a smooth scrolling effect to a specified eleme
 #### Usage
 
 ```tsx
-import ScrollTo from 'semantic-components/ScrollTo';
+import ScrollTo from "semantic-components/ScrollTo";
 
 const Example = () => {
   return (
@@ -392,10 +402,10 @@ const Example = () => {
 
 #### Props
 
-| Prop       | Type               | Description                                                      |
-|------------|--------------------|------------------------------------------------------------------|
-| `targetId` | `string`           | The ID of the element to scroll to.                             |
-| `children` | `React.ReactNode`  | The content to render inside the button.                        |
+| Prop       | Type              | Description                              |
+| ---------- | ----------------- | ---------------------------------------- |
+| `targetId` | `string`          | The ID of the element to scroll to.      |
+| `children` | `React.ReactNode` | The content to render inside the button. |
 
 #### Behavior
 
