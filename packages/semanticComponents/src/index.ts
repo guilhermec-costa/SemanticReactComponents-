@@ -8,7 +8,7 @@ import useDebounce from "./hooks/useDebounce";
 import useIsIntersectingScreen from "./hooks/useIsIntersectingScreen";
 import useClickOutside from "./hooks/useClickOutside";
 import Show from "./components/Show";
-import {Switch, Case} from "./components/SwitchCase";
+import { Switch, Case } from "./components/SwitchCase";
 import With from "./components/With";
 import Desktop from "./components/Desktop";
 import useDevice from "./hooks/useDevice";
@@ -21,10 +21,18 @@ import Memoized from "./components/Memoized";
 import useLocalStorage from "./hooks/useLocalStorage";
 import useSessionStorage from "./hooks/useSessionStorage";
 import useFetch from "./hooks/useFetch";
+import ElseIf from "./components/ElseIf";
+import EnvSwitch from "./components/EnvSwitch";
+import Map from "./components/Map";
+import Mobile from "./components/Mobile";
 
 export {
   If,
+  ElseIf,
+  EnvSwitch,
   For,
+  Map,
+  Mobile,
   useMounted,
   useToggle,
   useInterval,
@@ -33,7 +41,8 @@ export {
   useIsIntersectingScreen,
   useClickOutside,
   Show,
-  Switch, Case,
+  Switch,
+  Case,
   With,
   Desktop,
   useDevice,
@@ -45,5 +54,5 @@ export {
   Memoized,
   useLocalStorage,
   useSessionStorage,
-  useFetch
-}
+  useFetch,
+};
