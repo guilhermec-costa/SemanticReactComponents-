@@ -1,6 +1,6 @@
 # Semantic Components
 
-> **Important:** Please use version `1.1.5` or greater for optimal stability and compatibility. Later versions are not working properly
+> **Important:** Please use version `1.1.5` or greater for optimal stability and compatibility. Older versions are not working properly
 
 Semantic Components is a library of reusable, semantic React components and useful hooks designed to enhance your web applications. This library focuses on providing a set of well-structured components that are easy to integrate and customize, promoting best practices in React development.
 
