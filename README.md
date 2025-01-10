@@ -18,12 +18,6 @@ To install the package, run:
 npm install semantic-react-ui-components
 ```
 
-For TypeScript projects, also install the type definitions:
-
-```bash
-npm install --save-dev @types/semantic-react-ui-components
-```
-
 ## Components
 
 ### `Delayed`
